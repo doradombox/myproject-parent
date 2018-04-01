@@ -1,7 +1,10 @@
 package org.threaddemo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class MyThread extends Thread{
-    
+    private static final Logger logger = LoggerFactory.getLogger(MyThread.class);
     private static int num = 0;
     private String name;
     
